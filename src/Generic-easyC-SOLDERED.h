@@ -9,22 +9,9 @@
  * @authors     @ soldered.com
  ***************************************************/
 
-#ifndef __SENSOR__
-#define __SENSOR__
+#ifndef __CAN_SOLDERED__
+#define __CAN_SOLDERED__
 
 #include "Arduino.h"
-#include "libs/Generic-easyC/easyC.h"
-
-class Sensor : public EasyC
-{
-  public:
-    Sensor(int _pin);
-
-  protected:
-    void initializeNative();
-
-  private:
-    int pin;
-};
 
 #endif
